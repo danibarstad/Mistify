@@ -1,1 +1,32 @@
-todo: add html from other project
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <title>Spotify Weather</title>
+</head>
+
+<body>
+    <main>
+
+        <header id="header">
+            <h1>Welcome to [Spotify Weather]</h1>
+            <p>Generate a Spotify playlist based on the current weather.</p>
+        </header>
+
+        <div class="container">
+            <div class="inputs">
+                <button id="login" class="btn">Login to Spotify</button>
+            </div>
+        </div>
+
+        <footer id="footer">
+            created by <a target="_blank" href="https://danibarstad.com/">daniBarstad</a> | <a target="_blank" href="https://github.com/danibarstad/SpotifyWeather">GitHub</a>
+        </footer>
+
+    </main>
+</body>
+</html>
